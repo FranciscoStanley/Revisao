@@ -1,7 +1,7 @@
 ﻿using System;
-using Revisao;
 
-namespace Revisão
+
+namespace Revisao
 {
     class Program
     {
@@ -23,7 +23,7 @@ namespace Revisão
 
                         Console.WriteLine("Informe a nota do aluno: ");
 
-                        if (decimal.TryParse(Console.ReadLine(), out decimal nota)
+                        if (decimal.TryParse(Console.ReadLine(), out decimal nota))
                         {
                             aluno.Nota = nota;
                         }
@@ -33,12 +33,17 @@ namespace Revisão
                         }
 
                         alunos[indiceAluno] = aluno;
-                        indiceAluno ++;
+                        indiceAluno++;
 
                         break;
 
                     case "2":
                         //TODO: listar alunos
+                        foreach(var a in alunos)
+                        {
+                            Console.WriteLine($"ALUNO: {a.Nome} - NOTA: {a.Nota}");
+                        }
+
                         break;
 
                     case "3":
