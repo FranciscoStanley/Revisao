@@ -7,7 +7,7 @@ namespace Revisao
     {
         static void Main(string[] args)
         {
-            Aluno [] alunos = new Aluno[5];
+            Aluno [] alunos = new Aluno[30];
             var indiceAluno = 0;
             string opcaoUsuario = ObterOpcaoUsuario();
 
@@ -17,6 +17,7 @@ namespace Revisao
                 {
                     case "1":
                         //TODO: adicionar aluno
+                        Console.WriteLine("");
                         Console.WriteLine("Informe nome do aluno: ");
                         var aluno = new Aluno();
                         aluno.Nome = Console.ReadLine();
@@ -36,14 +37,18 @@ namespace Revisao
                         indiceAluno++;
 
                         break;
-
                     case "2":
                         //TODO: listar alunos
+                        
                         foreach(var a in alunos)
                         {
-                            Console.WriteLine($"ALUNO: {a.Nome} - NOTA: {a.Nota}");
-                        }
+                            if (!a.Nome.Equals(""))
+                            {
+                                Console.WriteLine($"ALUNO: {a.Nome} - NOTA: {a.Nota}");
+                            }
 
+                        }
+                        Console.WriteLine("");
                         break;
 
                     case "3":
