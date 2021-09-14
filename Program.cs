@@ -17,7 +17,6 @@ namespace Revisao
                 {
                     case "1":
                         //TODO: adicionar aluno
-                        Console.WriteLine("");
                         Console.WriteLine("Informe nome do aluno: ");
                         var aluno = new Aluno();
                         aluno.Nome = Console.ReadLine();
@@ -35,6 +34,7 @@ namespace Revisao
 
                         alunos[indiceAluno] = aluno;
                         indiceAluno++;
+                        Console.WriteLine("");
 
                         break;
                     case "2":
@@ -58,14 +58,8 @@ namespace Revisao
                         throw new ArgumentOutOfRangeException();
                 }
 
-                Console.WriteLine("Informe a opção desejada: ");
-                Console.WriteLine("1- Inserir novo aluno");
-                Console.WriteLine("2- Listar alunos");
-                Console.WriteLine("3- Calcular média geral");
-                Console.WriteLine("x- Sair");
-                Console.WriteLine();
-
                 opcaoUsuario = ObterOpcaoUsuario();
+
             }
         }
 
