@@ -1,4 +1,5 @@
 ﻿using System;
+using Revisao;
 
 namespace Revisão
 {
@@ -6,7 +7,7 @@ namespace Revisão
     {
         static void Main(string[] args)
         {
-            Aluno[] alunos = new Aluno[5];
+            Aluno [] alunos = new Aluno[5];
             var indiceAluno = 0;
             string opcaoUsuario = ObterOpcaoUsuario();
 
@@ -17,7 +18,7 @@ namespace Revisão
                     case "1":
                         //TODO: adicionar aluno
                         Console.WriteLine("Informe nome do aluno: ");
-                        Aluno aluno = new Aluno();
+                        var aluno = new Aluno();
                         aluno.Nome = Console.ReadLine();
 
                         Console.WriteLine("Informe a nota do aluno: ");
@@ -32,7 +33,7 @@ namespace Revisão
                         }
 
                         alunos[indiceAluno] = aluno;
-                        indiceAluno++;
+                        indiceAluno ++;
 
                         break;
 

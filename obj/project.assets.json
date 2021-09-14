@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Franc\\Revisao\\Revisão.csproj",
-      "projectName": "Revisão",
-      "projectPath": "C:\\Users\\Franc\\Revisao\\Revisão.csproj",
+      "projectUniqueName": "C:\\Users\\Franc\\Revisao\\Revisao.csproj",
+      "projectName": "Revisao",
+      "projectPath": "C:\\Users\\Franc\\Revisao\\Revisao.csproj",
       "packagesPath": "C:\\Users\\Franc\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Franc\\Revisao\\obj\\",
       "projectStyle": "PackageReference",
