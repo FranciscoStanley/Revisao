@@ -7,6 +7,7 @@ namespace Revisão
         static void Main(string[] args)
         {
             Aluno[] alunos = new Aluno[5];
+            var indiceAluno = 0;
             string opcaoUsuario = ObterOpcaoUsuario();
 
             while (opcaoUsuario.ToUpper() != "X")
@@ -30,7 +31,8 @@ namespace Revisão
                             throw new ArgumentException("O valor da nota deve ser decimal!!");
                         }
 
-                        alunos[] = aluno;
+                        alunos[indiceAluno] = aluno;
+                        indiceAluno++;
 
                         break;
 
